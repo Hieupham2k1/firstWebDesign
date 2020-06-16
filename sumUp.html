@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+	<link rel="stylesheet" href="sumUp.css">
+
+	<title>Sum Up</title>
+</head>
+<body onscroll="popupInfo()" onresize="resize()">
+	<div id="background">
+	<video id="video" autoplay muted loop>
+		<source src="https://static.videezy.com/system/resources/previews/000/007/313/original/Plexus.mp4"><span>inside source</span></source>
+		<span>inside video</span>
+	</video>
+	</div>
+	<div id="header">
+		<div id="menuButton" onclick="menuToggle()">Menu</div>
+		<div id="menu" class="menuHide">
+			<div class="menuQuarter"></div><div class="menuQuarter"></div>
+			<div class="menuQuarter"></div><div class="menuQuarter"></div>
+		</div>
+		<div id="logo">Logo</div>
+		<div>.</div>
+		<div id="dropdown">
+			<div class="dropdownPiece" onclick="ddPShow(1)"><div class="dropdownCover" style="background-color: ">1</div>
+				<div class="ddP1"><div class="holderddP1">a</div></div>
+				<div class="ddP1"><div class="holderddP1">a</div></div>
+				<div class="ddP1"><div class="holderddP1">a</div></div>
+			</div>
+			<div class="dropdownPiece" onclick="ddPShow(2)"><div class="dropdownCover" style="background-color: ">2</div>
+				<div class="ddP2"><div class="holderddP2">a</div></div>
+				<div class="ddP2"><div class="holderddP2">a</div></div>
+				<div class="ddP2"><div class="holderddP2">a</div></div>
+			</div>
+			<div class="dropdownPiece" onclick="ddPShow(3)"><div class="dropdownCover" style="background-color: ">3</div>
+				<div class="ddP3"><div class="holderddP3">a</div></div>
+				<div class="ddP3"><div class="holderddP3">a</div></div>
+				<div class="ddP3"><div class="holderddP3">a</div></div>
+			</div>
+			<div class="dropdownPiece" onclick="ddPShow(4)"><div class="dropdownCover" style="background-color: ">4</div>
+				<div class="ddP4"><div class="holderddP4">a</div></div>
+				<div class="ddP4"><div class="holderddP4">a</div></div>
+				<div class="ddP4"><div class="holderddP4">a</div></div>
+			</div>
+		</div>
+	</div>
+	<div id="body">
+		<div id="bodyHeader" >Body Header</div>
+		<div id="bodyGrid" onclick="letInfoVisible(1)">
+			<div class="bGPiece" onmouseenter="infoShow(1)" onmouseout="infoHide()">1</div>
+			<div class="bGPiece" onmouseenter="infoShow(2)" onmouseout="infoHide()">2</div>
+			<div class="bGPiece" onmouseenter="infoShow(3)" onmouseout="infoHide()">3</div>
+			<div class="bGPiece" onmouseenter="infoShow(4)" onmouseout="infoHide()">4</div>
+			<div class="bGPiece" onmouseenter="infoShow(5)" onmouseout="infoHide()">5</div>
+			<div class="bGPiece" onmouseenter="infoShow(6)" onmouseout="infoHide()">6</div>
+			<div class="bGPiece" onmouseenter="infoShow(7)" onmouseout="infoHide()">7</div>
+			<div class="bGPiece" onmouseenter="infoShow(8)" onmouseout="infoHide()">8</div>
+			<div class="bGPiece" onmouseenter="infoShow(9)" onmouseout="infoHide()">9</div>
+		</div>
+	</div>
+	<div id="informerContainer">
+		<span onclick="letInfoVisible(0)" style="float: right; cursor: pointer">X</span>
+		<div id="stopBgButton" onclick="stopBackground()">Turn Off Background?</div>
+		<div id="informer"></div>
+	</div>
+	<div id="footer"></div>
+	<div id="bGContent" style="display: none">
+		<div id="bGContent1">content1</div><div id="bGContent2">content2</div><div id="bGContent3">content3</div>
+		<div id="bGContent4">content4</div><div id="bGContent5">content5</div><div id="bGContent6">content6</div>
+		<div id="bGContent7">content7</div><div id="bGContent8">content8</div><div id="bGContent9">content9</div>
+	</div>
+</body>
+	<script src="sumUp.js"></script>
+</html>
